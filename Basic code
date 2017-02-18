@@ -11,7 +11,7 @@ System.out.println("\n\n");
 		answer = sc.next();
 
 		if (answer.equalsIgnoreCase("No")){
-			System.out.println("Ok...");
+			System.out.println("Control + W");
 			return;
 		else{
 		
