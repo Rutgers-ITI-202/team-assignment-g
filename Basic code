@@ -5,7 +5,23 @@ public class TheCabinITheWoods {
 	public static void main(String[] args) {
   		sc = new Scanner(System.in);
     
+System.out.println("\n\n");
+		String answer="";
+		System.out.println("Would you like to play? \n");
+		answer = sc.next();
 
+		if (answer.equalsIgnoreCase("No")){
+			System.out.println("Ok...");
+			return;
+		else{
+		
+		
+		
+		
+		
+		
+		
+		}
 
 
 
