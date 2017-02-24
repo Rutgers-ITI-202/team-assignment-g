@@ -1,15 +1,40 @@
-public class Fisher{
-  private boolean key = false;
-  
-  public class Fisher{
-  
-  public void getkey(boolean key) {
-			this.key=!this.key;
+package Game;
+
+public class Fisher {
+	private boolean doorkey = false;
+	private boolean sausage = false;
+	private boolean book = false;
+	private boolean axe = false;
+	
+	public Fisher(){}
+
+	public void use(boolean flashlight) {
+	this.doorkey=!this.doorkey;
+	}
+	public void lookingaround(){
+		System.out.println("Trying to look around?");
+		System.out.println("Fisher starts to take a colse look at everything else in the room"
+				+ "\n The first two thigns get his attentnion are:"
+				+ "\n Table"
+				+ "\n Chair"
+				+ "\n\n At this moment, Fisher really wants to sit down for a while thought he just got up from the bethed. "
+				+ "\nHe approach the chair and sit dwon in front of the table."
+				+ "\nFisher then realize that is nothing but a white paper and a pencil on the desk."
+				+ "\nHe picks up the pencil and feels a strange power come into his arm."
+				+ "\nRight now he has to draw something to release power.");
+	}
+	
+	public boolean getaxe() {
+	return true;
+	}
+	
+	public boolean getsusage() {
+		return true;
 		}
-  
-  
-  }
-
-
-
+	
+	public boolean getbook() {
+		return true;
+		}
+	
+	
 }
