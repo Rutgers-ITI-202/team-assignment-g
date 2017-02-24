@@ -81,10 +81,14 @@ public class CabinInTheWoods {
 					}
 				}
 				
-				System.out.println("Then Fisher knows that in a game there must be a key for every lock, "
-				+ "including the door’s lock that he cannot open now. "
-				+ "\nHe looks at the axe that is exactly the same size he drawed on the paper "
-				+ "\nand wonders if he can split the door using such a small axe.");
+					System.out.println("Fisher knows that in a game there must be a key for every lock, "
+					+ "\nincluding the door’s lock that he cannot open now. "
+					+ "\nHe looks at the axe that is exactly the same size he drawed on the paper and wonders "
+					+ "\nif he can split the door using such a small axe. "
+					+ "\nHe grabs the axe in his hand and is surprised by it’s weight. "
+					+ "\nFisher steps right in front of the door, holding the axe by his two hands. "
+					+ "\nAnd he make a wish about the axe. "
+					+ "\nAfter all, this is his best shot to get out.");
 				
 			
 					
