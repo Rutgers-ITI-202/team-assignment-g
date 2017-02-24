@@ -1,32 +1,94 @@
+package Game;
 import java.util.Scanner;
-public class TheCabinITheWoods {
-  private static Scanner sc;
+public class CabinInTheWoods {
+
+	private static Scanner sc;
 
 	public static void main(String[] args) {
-  		sc = new Scanner(System.in);
-    
-System.out.println("\n\n");
+		Fisher Fisher= new Fisher();
+		sc = new Scanner(System.in);
+
+		System.out.println("Welcome to the game Cabin In The Woods "
+				+ "\n You will play the kid Fisher. "
+				+ "\n As you wake up in the Cabin. "
+				+ "\n You realize you are traped inside the room."
+				+ "\n The first ting you have to do is trying to get out.");
+
 		String answer="";
-		System.out.println("Would you like to play? \n");
+		System.out.println("Would you like to play?");
+
 		answer = sc.next();
 
 		if (answer.equalsIgnoreCase("No")){
 			System.out.println("Control + W");
 			return;
-		else{
-		
-		
-		
-		
-		
-		
-		
 		}
-
-
-
-
-
-
-
+			else{
+				System.out.println("Fisher opens his eyes and he feel like he has slept for ten years. "
+				+ "\n He has never felt so hungry before."
+				+ "\n This hungryness makes him forgets the truth that he doesn't know the place he wakes up in."
+				+ "\n The first thing he looks at is a door"
+				+ "\n Do you wish him to open it?");
+				String input = sc.next();
+				if(input.equalsIgnoreCase("Yes")){
+					System.out.println("It seems that the door needs a key to be opened.");
+					Fisher.lookingaround();
+				}else{
+					Fisher.lookingaround();
+				}
+				System.out.println("Three things suddenly jump into his mind, wihch are a sausage, an egg, an axe, and a book."
+						+ "\nWhich one shoud he draw?");
+							
+				for(answer = sc.next();Fisher.getaxe() == true;){
+					
+					if(answer.equalsIgnoreCase("sausage")){
+						System.out.println("Pa! There is a sound comes behind."
+				+ "\nFisher turns around and he can't beleve what he sees."
+				+ "\nThere is an sausage lying on the ground, coming from nowhere."
+				+ "\nFisher picks up the susage and he thinks that he should draw an axe so he can break the wood door"
+				+ "\nThe pencil starts talking ‘You can always draw another axe, my friend’. "
+				+ "\nFisher does not consider why a pencil can talk and go back to the desk in order to draw an axe.");
+						Fisher.getsusage();
+						answer = sc.next();
+					}
+					if(answer.equalsIgnoreCase("egg")){
+						System.out.println("Pa! There is a sound comes behind"
+				+ "\nFisher turns around and he can't beleve what he sees."
+				+ "\nThere is an broke egg  on the ground, coming from the roof."
+				+ "\nFisher thinks that he should draw an axe so he can break the wood door"
+				+ "\nThe pencil starts talking ‘You can always draw another axe, my friend’. "
+				+ "\nFisher does not consider why a pencil can talk and go back to the desk in order to draw an axe.");
+						answer = sc.next();
+					}
+					if(answer.equalsIgnoreCase("axe")){
+						System.out.println("Pa! There is a sound comes behind."
+				+ "\nFisher turns around and he can't beleve what he sees."
+				+ "\nThere is an axe lying on the ground, coming from nowhere."
+				+ "\nFIsher is shocked and thinks that'why it didn't drop on my head'"
+				+ "\nHe leaves the chair and picks up the axe.");
+						Fisher.getaxe();
+						break;
+					}
+					if(answer.equalsIgnoreCase("book")){
+						System.out.println("Pa! There is a sound comes behind"
+				+ "\nFisher turns around and he can't beleve what he sees."
+				+ "\nThere is an book lying on the ground, coming from nowhere."
+				+ "\nFisher picks up the book and thinks that he should draw an axe so he can break the wood door"
+				+ "\nThe pencil starts talking ‘You can always draw another axe, my friend’. "
+				+ "\nFisher does not consider why a pencil can talk and go back to the desk in order to draw an axe.");
+						Fisher.getbook();
+						answer = sc.next();
+					}
+				}
+				
+				System.out.println("Then Fisher knows that in a game there must be a key for every lock, "
+				+ "including the door’s lock that he cannot open now. "
+				+ "\nHe looks at the axe that is exactly the same size he drawed on the paper "
+				+ "\nand wonders if he can split the door using such a small axe.");
+				
+			
+					
+		}
+	}
+		
 }
