@@ -8,7 +8,10 @@ An adventurer can:
 •	Carry a number of objects.
 •	Pick up, drop, look at, and use various objects.
 */
-
+/**
+*Author @Tianyi Chai
+*
+**/
 package adventure;
 
 
@@ -128,7 +131,7 @@ public class Fisher {
 		Random ran = new Random();
 		int x = ran.nextInt(10);
 		return x;
-		
+		//get random from 0-10 and use the number in method go to run
 	}
 	
 	public boolean go(int rowthedice){
