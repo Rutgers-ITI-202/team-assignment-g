@@ -8,7 +8,9 @@ This class:
 	o	As commands are entered, they should be copied to the main text area.
 	o	The method that executes commands should return a String to be displayed in the main text area.
 */
-
+/**
+*Author @Tianyi Chai
+**/
 package adventure;
 
 mport java.util.Scanner;
